@@ -1,6 +1,8 @@
 use crate::dom;
 use std::collections::HashMap;
 
+// TODO: Add functionality for Comment node
+
 pub fn parse(source: String) -> dom::Node {
     let mut nodes = Parser{pos: 0, input: source}.parse_nodes();
 
